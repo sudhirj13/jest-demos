@@ -51,8 +51,6 @@ it('mock implementations', () => {
 
 it('mock name', () => {
   const mockFn = jest.fn().mockName('mockedFunction')
-  // mockFn();
-  expect(mockFn).toHaveBeenCalled()
-
-  // Output: Error: expect(mockedFunction).toHaveBeenCalled()
+  mockFn();
+  expect(mockFn).toHaveBeenCalled();
 })
